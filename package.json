@@ -41,8 +41,10 @@
       "images": [
         ".jpeg",
         ".png",
-        ".svg"
+        ".svg",
+        ".jpg"
       ],
+      "fonts": [".woff", ".woff2"],
       ".css": "styles"
     },
     "options": {

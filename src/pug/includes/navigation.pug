@@ -1,0 +1,17 @@
+- var items = ['О бренде', 'Perfectha', 'Ellansé', 'Для партнеров', 'Контакты']
+
+.navigation
+  .logo
+    .logo__link
+      include ../../images/svg/logo.svg
+  ul.navigation__list
+    each val in items
+      li.navigation__item
+        a(href="#").navigation__link= val
+    .navigation__socials
+      a(href="#").navigation__socials-instagram
+      a(href="#").navigation__socials-dacebook
+      
+      
+
+          
