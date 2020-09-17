@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  width: 100%;
+  min-height: calc(724/1280*100vw);
+  padding-top: 60px;
+
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    max-width: 1080px;
+    width: 100%;
+    height: 20px;
+
+    background: #60C1F0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__container {
+  position: relative;
+  z-index: 1;
+}
+
+.header__text {
+  margin-left: calc(653/1280*100%);
+
+  font-size: 60px;
+  line-height: 60px;
+  font-family: $font-moon-family;
+  font-weight: normal;
+}

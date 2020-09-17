@@ -1,19 +1,15 @@
 - var items = ['О бренде', 'Perfectha', 'Ellansé', 'Для партнеров', 'Контакты']
 
 .navigation
-  .logo
+  a(href="#").logo
     .logo__link
       include ../../images/svg/logo.svg
   ul.navigation__list
     each val in items
       li.navigation__item
         a(href="#").navigation__link= val
-    .navigation__socials
+    li.navigation__socials
       a(href="#").social.social__navigation.social__inst
         include ../../images/svg/insta.svg
       a(href="#").social.social__navigation.social__fb
         include ../../images/svg/fb.svg
-      
-      
-
-          
