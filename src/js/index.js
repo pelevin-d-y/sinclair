@@ -11,30 +11,6 @@ $(() => {
       menu.classList.toggle('menu-show')
     })
   })
-
-  // const form = document.querySelector('.main-form')
-  // if (form) {
-  //   const errors = {
-  //     form__name: {
-  //       require: 'укажите ваше имя',
-
-  //     },
-  //     form__phone: {
-
-  //     },
-  //     form__email : {
-
-  //     },
-  //   }
-
-  //   form.addEventListener('submit', (evt) => {
-  //     evt.preventDefault()
-  //     const inputs = Array.from(evt.target.querySelectorAll('input'))
-  //     inputs.forEach(input => {
-  //       const name = input.getAttribute('name')
-  //     })
-  //   })
-  // }
   
   if ($("#main-form")[0]) {
 
