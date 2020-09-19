@@ -6,6 +6,11 @@ block content
     section.main-description
       .container
         .main-description__row
+          // header__text
+          h1.header__text.main-description-title.main-description__col.mobile 
+            | Иновационные продукты
+            br
+            | для эстетической медицины
           .main-description__col
             | Sinclair Pharma, один из мировых лидеров в области эстетической медицины, специализируется на разработке и создании инновационных продуктов с фокусом на стимуляцию выработки коллагена. Основанная в 1971 году компания высоко зарекомендовала себя на международном рынке и завоевала признание у профессионалов во всем мире благодаря высокому качеству, эффективности, безопасности создаваемых продуктов и стабильным результатам их использования.
           .main-description__col
@@ -19,35 +24,38 @@ block content
             | Глобальная мировая компания - 88 стран присутствия. 
           .main-features__col
             | Качество и безопасность продуктов подтверждены сертификатами FDA и CE 
-        
-    section.main-features
-      .container.main-features__container
-        .main-features__wrapper
+    section.main-portfolio
+      .container.main-portfolio__container
+        .main-portfolio__wrapper
           span Инновационный портфель Sinclair Pharma
           = " "
           | охватывает все направления эстетической медицины и постоянно расширяется. Продукты создаются по самым высоким стандартам, исключительно из очищенного сырья, отвечающего всем требованиям безопасности. Каждый этап, от разработки формулы до упаковки продуктов, сопровождается строгим контролем качества. В результате клиент получает высококачественный продукт нового поколения, без примесей, с оптимальными характеристиками пластичности, эластичности и вязкости.
     section.main-perfectha
-      .main-perfectha__image
-        img(src="../../images/desctop/main-perfectha.jpg")
-      .container.main-perfectha__container
+      .main-perfectha__image.with-line
+        img.desctop(src="../../images/desctop/main-perfectha.jpg")
+        img.mobile(src="../../images/mobile/main-perfectha.jpg")
+      .container.main-perfectha__container.with-line
         .main-perfectha__text-wrapper
           .main-perfectha__logo
             include ../../images/svg/logo-perfectha.svg
           .main-perfectha__text
             | Филлеры на основе гиалуроновой кислоты Perfectha® заслужили доверие тысяч врачей и пациентов в более чем 70 странах мира. Изготовленные на собственном производстве во Франции из высококачественного сырья, они позволяют получить безопасный и естественный результат: коррекцию морщин, гармонизацию черт лица, восстановление утраченных объемов, плотности, упругости и сияния кожи. 
           button.main-perfectha__btn
-            | Продукция Perfectha®
+            | Продукция Perfectha
+            sup ®
     section.main-ellanse
       .main-ellanse__image
-        img(src="../../images/desctop/main-ellanse.jpg")
-      .container.main-ellanse__container
+        img.desctop(src="../../images/desctop/main-ellanse.jpg")
+        img.mobile(src="../../images/mobile/main-ellanse.jpg")
+      .container.main-ellanse__container.with-line
         .main-ellanse__text-wrapper
           .main-ellanse__logo
             include ../../images/svg/logo-ellanse.svg
           .main-ellanse__text
             | Филлеры на основе гиалуроновой кислоты Perfectha® заслужили доверие тысяч врачей и пациентов в более чем 70 странах мира. Изготовленные на собственном производстве во Франции из высококачественного сырья, они позволяют получить безопасный и естественный результат: коррекцию морщин, гармонизацию черт лица, восстановление утраченных объемов, плотности, упругости и сияния кожи. 
           button.main-ellanse__btn
-            | Продукция Perfectha®
+            | Продукция Ellansé
+            sup ®
     section.partners
       .container
         .partners__for
@@ -68,20 +76,21 @@ block content
               | Поможем увеличить количество пациентов, степень их удовлетворенности и коэффициент удержания
     .section.form
       .container.form__container
-        .form__left
-          | Оставьте ваши контактные данные, и мы расскажем больше о продуктах Sinclair Pharma и программе поддержки профессионалов рынка эстетической медицины
-        .form__right
-          form(action="#")
-            .form__input
-              input(type="text" placeholder="Имя, Фамилия")
-            .form__input
-              input(type="tel" placeholder="+ 7  (        )")
-            .form__input
-              input(type="tel" placeholder="Email")
-            .form__input
-              input(type="tel" placeholder="Компания")
-            button.form-button
-              | отправить
-            .conditions
-              | Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Условиями обработки персональных данных и принимаете их
+        .form__wrapper
+          .form__left
+            | Оставьте ваши контактные данные, и мы расскажем больше о продуктах Sinclair Pharma и программе поддержки профессионалов рынка эстетической медицины
+          .form__right
+            form(action="#")
+              .form__input
+                input(type="text" placeholder="Имя, Фамилия" required)
+              .form__input
+                input(type="tel" placeholder="+ 7  (        )")
+              .form__input
+                input(type="email" placeholder="Email")
+              .form__input
+                input(type="text" placeholder="Компания")
+              button.form-button
+                | отправить
+              .conditions
+                | Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Условиями обработки персональных данных и принимаете их
             

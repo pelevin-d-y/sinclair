@@ -1,8 +1,10 @@
-.header.header-main
-  img.header__bg(src="../../images/desctop/header-1.jpg")
+.header.header-main.with-line
+  img.header__bg.desctop(src="../../images/desctop/header-1.jpg")
+  img.header__bg.mobile(src="../../images/mobile/header-1.jpg")
   .container.header__container
     include ../includes/navigation.pug
-    h1.header__text
+    // header__text продублирован для мобильной версии
+    h1.header__text.desctop
       | Иновационные продукты
       br
       | для эстетической медицины

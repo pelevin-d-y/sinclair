@@ -5,7 +5,10 @@
   padding-top: 60px;
 
   overflow: hidden;
+}
 
+.with-line {
+  position: relative;
   &::before {
     content: '';
     position: absolute;
@@ -43,4 +46,12 @@
   line-height: 60px;
   font-family: $font-moon-family;
   font-weight: normal;
+}
+
+@media (max-width: $tablet) {
+  .header {
+    padding-top: 27px;
+    height: calc(555/375*100vw);
+    // max-height: 800px;
+  }
 }

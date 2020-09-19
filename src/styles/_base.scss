@@ -35,3 +35,30 @@ a {
   color: $text-blue-color;
   text-decoration: none;
 }
+
+.mobile {
+  display: none
+}
+
+form {
+  margin-bottom: 0;
+}
+
+@media (max-width: $tablet) {
+  body {
+    padding-bottom: 50px;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desctop {
+    display: none;
+  }
+}
