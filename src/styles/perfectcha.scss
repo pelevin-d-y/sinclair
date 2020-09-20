@@ -1,4 +1,8 @@
 .concentration {
+  position: relative;
+  z-index: 1;
+  margin-top: -180px;
+
   .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -9,6 +13,7 @@
 
   .left {
     width: 413px;
+    margin-top: 43px;
   }
 
   .perfectcha-info__title {

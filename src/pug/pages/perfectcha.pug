@@ -2,7 +2,12 @@
 extends ../layout/layout.pug
 
 block content
-
+  include ../includes/header-perfectha.pug
+  .header-text__wrapper.mobile
+    .header__sublogo
+      include ../../images/svg/logo-perfectha.svg
+    h1.header__text
+      | Специальная линейка дермальных филлеров на основе гиллауроновой кислоты
   section.concentration
     .wrapper
       .left
