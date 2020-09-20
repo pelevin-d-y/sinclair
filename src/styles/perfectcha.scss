@@ -1,4 +1,8 @@
 .concentration {
+  position: relative;
+  z-index: 1;
+  margin-top: -180px;
+
   .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -9,6 +13,7 @@
 
   .left {
     width: 413px;
+    margin-top: 43px;
   }
 
   .perfectcha-info__title {
@@ -54,6 +59,10 @@
   width: 1024px;
   margin: 195px auto;
 
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 
   .left {
     width: 446px;
@@ -204,6 +213,8 @@
 }
 
 section.face {
+  margin-bottom: 102px;
+
   .wrapper {
     display: flex;
     align-items: flex-end;
@@ -432,6 +443,10 @@ section.face.mob {
     padding-right: 25px;
     //margin: 73px auto;
     margin:45px 0;
+
+    .wrapper {
+      flex-flow: column nowrap;
+    }
 
     .left {
       width:325px;

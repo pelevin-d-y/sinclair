@@ -42,6 +42,61 @@
   background: $bg-yellow;
 }
 
+.header__perfectha::before {
+  background: #F3D5DB;
+}
+
+.header__perfectha {
+  .header-text__wrapper {
+    margin-top: 96px;
+    margin-left: calc(633/1280*100%);
+    color: #ffffff;
+  }
+
+  .header__text {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 50px;
+    line-height: 55px;
+    color: #ffffff;
+    font-weight: $thin;
+  }
+
+  .header__sublogo svg {
+    margin-bottom: 25px;
+    width: 206px;
+    height: 28px;
+  }
+
+  .navigation__link {
+    color: #ffffff;
+  }
+
+  .social__navigation {
+    path {
+      stroke: #ffffff;
+    }
+
+    .facebook-svg-path {
+      fill: #ffffff;
+      stroke: transparent;
+    }
+  }
+
+  .logo__link.logo__link-face {
+    path {
+      stroke: transparent;
+      fill: #ffffff;
+    }
+  }
+
+  .navigation__hamburger {
+    rect {
+      fill: #ffffff;
+    }
+  }
+}
+
 .header__ellance .header__text {
   margin-top: 97px;
   max-width: 524px;
@@ -49,6 +104,7 @@
   font-size: 50px;
   line-height: 55px;
 }
+
 
 @media (max-width: 1146px) {
   .header__ellance .header__text {
@@ -79,5 +135,34 @@
     line-height: 40px;
     font-family: $font-moon-family;
     font-weight: $thin;
+  }
+
+  .header__perfectha {
+    .navigation__link {
+      color: #35342E;
+    }
+
+    .social__navigation {
+      path {
+        stroke: #221F20;
+      }
+  
+      .facebook-svg-path {
+        fill: #221F20;
+        stroke: transparent;
+      }
+    }
+  }
+
+  .header-text__wrapper.mobile {
+    margin-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .header__text {
+      margin-left: 0;
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
 }
