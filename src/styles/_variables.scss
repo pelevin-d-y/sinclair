@@ -1,6 +1,3 @@
-$black: #000000;
-$green: green;
-
 // fonts
 $font-family: Raleway;
 $font-moon-family: TTMoons;
@@ -10,3 +7,18 @@ $thin: 300;
 $regular: normal;
 $medium: 500;
 $bold: bold;
+
+// breakpoints
+$laptop: 1279px;
+$tablet: 1023px;
+$phone: 767px;
+$phone-xs: 320px;
+
+// font colors
+$text-base-color: #35342E;
+$text-secondary-color: #2E3235;
+$text-black-color: #000000;
+$text-blue-color: #1563A8;
+
+// background
+$bg-yellow: #FCED00;

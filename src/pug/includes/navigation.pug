@@ -1,0 +1,35 @@
+.navigation
+  a(href="/").logo.heder__logo
+    .logo__link.logo__link-face
+      include ../../images/svg/logo.svg
+  .navigation__hamburger.mobile.menu-trigger
+    include ../../images/svg/hamburger.svg
+  .navigation__wrapper.menu-hide
+    .navigation__header.mobile
+      .logo__link
+        include ../../images/svg/logo.svg
+      .navigation__cross.menu-trigger
+        include ../../images/svg/cross.svg
+    ul.navigation__list
+      li.navigation__item
+        a(href="#").navigation__link
+          | О бренде
+      li.navigation__item
+        a(href="#").navigation__link
+          | Perfectha
+          sup ®
+      li.navigation__item
+        a(href="#").navigation__link
+          | Ellansé­
+          sup ®
+      li.navigation__item
+        a(href="#").navigation__link
+          | Для партнеров
+      li.navigation__item
+        a(href="#").navigation__link
+          | Контакты
+      li.navigation__socials
+        a(href="#").social.social__navigation.social__inst
+          include ../../images/svg/insta.svg
+        a(href="#").social.social__navigation.social__fb
+          include ../../images/svg/fb.svg

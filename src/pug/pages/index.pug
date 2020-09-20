@@ -2,15 +2,99 @@ extends ../layout/layout.pug
 
 block content
   main.main
-    .font-regular
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-bold
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-medium
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-regular-moon
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .image
-      img(src="../../images/header-1.jpg")
-    .svg 
-      include ../../images/svg/sinclair.svg
+    include ../includes/header.pug
+    section.main-description
+      .container
+        .main-description__row
+          // header__text
+          h1.header__text.main-description-title.main-description__col.mobile 
+            | Иновационные продукты
+            br
+            | для эстетической медицины
+          .main-description__col
+            | Sinclair Pharma, один из мировых лидеров в области эстетической медицины, специализируется на разработке и создании инновационных продуктов с фокусом на стимуляцию выработки коллагена. Основанная в 1971 году компания высоко зарекомендовала себя на международном рынке и завоевала признание у профессионалов во всем мире благодаря высокому качеству, эффективности, безопасности создаваемых продуктов и стабильным результатам их использования.
+          .main-description__col
+            | Сегодня представительства Sinclair работают во многих странах Западной Европы, США, Великобритании, Южной Корее, Объединенных Арабских Эмиратах, Бразилии и Мексике.
+    section.main-features
+      .container
+        .main-features__row
+          .main-features__col
+            | Более 40 лет научной экспертизы, передовых разработок и успешных испытаний 
+          .main-features__col
+            | Глобальная мировая компания - 88 стран присутствия. 
+          .main-features__col
+            | Качество и безопасность продуктов подтверждены сертификатами FDA и CE 
+    section.main-portfolio
+      .container.main-portfolio__container
+        .main-portfolio__wrapper
+          .main-portfolio__text
+            span Инновационный портфель Sinclair Pharma
+            = " "
+            | охватывает все направления эстетической медицины и постоянно расширяется. Продукты создаются по самым высоким стандартам, исключительно из очищенного сырья, отвечающего всем требованиям безопасности. Каждый этап, от разработки формулы до упаковки продуктов, сопровождается строгим контролем качества. В результате клиент получает высококачественный продукт нового поколения, без примесей, с оптимальными характеристиками пластичности, эластичности и вязкости.
+    section.main-perfectha
+      .main-perfectha__image.with-line
+        img.desctop(src="../../images/desctop/main-perfectha.jpg")
+        img.mobile(src="../../images/mobile/main-perfectha.jpg")
+      .container.main-perfectha__container
+        .main-perfectha__text-wrapper
+          .main-perfectha__logo
+            include ../../images/svg/logo-perfectha.svg
+          .main-perfectha__text
+            | Филлеры на основе гиалуроновой кислоты Perfectha® заслужили доверие тысяч врачей и пациентов в более чем 80 странах мира. Изготовленные на собственном производстве во Франции из высококачественного сырья, они позволяют получить безопасный и естественный результат: коррекцию морщин, гармонизацию черт лица, восстановление утраченных объемов, плотности, упругости и сияния кожи. 
+          a(href="./perfectcha.pug").main-perfectha__btn
+            | Продукция Perfectha
+            sup ®
+    section.main-ellanse
+      .main-ellanse__image.with-line
+        img.desctop(src="../../images/desctop/main-ellanse.jpg")
+        img.mobile(src="../../images/mobile/main-ellanse.jpg")
+      .container.main-ellanse__container.with-line
+        .main-ellanse__text-wrapper
+          .main-ellanse__logo
+            include ../../images/svg/logo-ellanse.svg
+          .main-ellanse__text
+            | Филлеры-биостимуляторы Ellansé®, изготовленные в Нидерландах, наряду с моментальным действием — коррекцией глубоких морщин, складок, восстановлением объемов — помогают  запустить собственные механизмы выработки коллагена, что позволяет получить длительный результат, а также улучшить качество кожи. 
+          a(href="./ellance.pug").main-ellanse__btn
+            | Продукция Ellansé
+            sup ®
+    section.partners
+      .container
+        .partners__for
+          | для партнеров
+        .partners__title
+          | Sinclair Pharma оказывает научную и клиническую поддержку как опытным, так и начинающим специалистам
+        .partners__description
+          | и предоставляет возможность для постоянного развития и повышения навыков. Помимо этого мы поможем разработать и реализовать маркетинговую стратегию или тактическую digital-кампанию по привлечению новых пациентов.
+        .partners__features
+          .partners__features-row
+            .partners__features-col
+              | Проведем анализ рынка и конкурентного окружения
+            .partners__features-col
+              | Сделаем аудит бренда клиники или персонального бренда врача и наметим точки роста бизнеса
+            .partners__features-col
+             | Определим набор каналов и инструментов для реализации бизнес-потенциала, поможем запустить кампании в рамках выбранного тактического плана
+            .partners__features-col
+              | Поможем увеличить количество пациентов, степень их удовлетворенности и коэффициент удержания
+    .section.form
+      .container.form__container
+        .form__wrapper
+          .form__left
+            | Оставьте ваши контактные данные, и мы расскажем больше о продуктах Sinclair Pharma и программе поддержки профессионалов рынка эстетической медицины
+          .form__right
+            form(id="main-form" class="main-form" action="#")
+              .form__input
+                input(type="text" name="form__name" placeholder="Имя, Фамилия")
+              .form__input
+                input(type="tel" name="form__phone" placeholder="+ 7  (        )")
+              .form__input
+                input(type="email" name="form__email" placeholder="Email")
+              .form__input
+                input(type="text" name="form__company" placeholder="Компания")
+              .form__footer
+                button.form-button
+                  | отправить
+                .form__errors
+                .form__success
+                  | Спасибо, мы получили ваши данные и свяжемся с вами при первой возможности.
+              .conditions
+                | Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Условиями обработки персональных данных и принимаете их
