@@ -12,7 +12,7 @@
   }
 
   .perfectcha-info__title {
-
+    font-family:$font-moon-family;
     font-weight: 300;
     font-size: 40px;
     line-height: 40px;
@@ -59,6 +59,7 @@
     width: 446px;
 
     .deep__title {
+      font-family:$font-moon-family;
       font-weight: 300;
       font-size: 90px;
       line-height: 80px;
@@ -87,12 +88,13 @@
       margin-top: 26px;
     }
 
-
+    .deep__description.desk{
+      font-family:$font-moon-family;
+    }
   }
 
   .deep__description.mob {
     display: none;
-
   }
 
   .right {
@@ -392,22 +394,38 @@ section.face.mob {
       margin-top: 0;
       border: none;
       padding: 0;
+      width:350px;
+
+      img{
+        width:360px;
+      }
     }
 
     .left {
       margin-top: 32px;
       border-bottom: 1px solid #35342E;
       padding-bottom: 55px;
+      width:350px;
+    }
 
-
+    .perfectcha-info__title {
+      font-family:$font-moon-family;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      color: #000000;
     }
 
     .perfectcha-info__description {
       margin-top: 16px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
     }
   }
 
   .deep {
+    width:375px;
     margin-top: 45px;
     flex-direction: column;
     padding-left: 25px;
@@ -415,6 +433,24 @@ section.face.mob {
     margin: 73px auto;
 
     .left {
+      width:325px;
+      .deep__title {
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 60px;
+        text-align:left;
+      }
+  
+      .deep__subtitle {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: #2E3235;
+        margin-top: 26px;
+        text-align: left;
+      }
+  
+      
       .deep__description {
         display: none;
       }
@@ -425,19 +461,20 @@ section.face.mob {
     .deep-levels {
       margin-left: 0;
       margin-top: 23px;
+      width:325px;
     }
 
     .right {
       margin-left: 0;
       margin-top: 38px;
-
+      width:325px;
 
     }
 
     .deep__description.mob {
       display: block;
-      width: 325px;
-      font-family: TT Moons;
+      width: 355px;
+      font-family:$font-moon-family;
       font-style: normal;
       font-weight: 300;
       font-size: 33px;
@@ -459,6 +496,7 @@ section.face.mob {
     .wrapper {
       flex-direction: column;
       align-items: flex-start;
+      margin-top:65px;
 
       .face_title,
       .face-right__title,
@@ -466,6 +504,7 @@ section.face.mob {
       .indication {
         padding-left: 24px;
         padding-right: 24px;
+        width:247px;
       }
 
       .face-right__title {
@@ -482,12 +521,29 @@ section.face.mob {
 
       .face-center {
         position: relative;
+        img {
+          width:100%;
+        }
       }
 
       .image-side {
         left: 33px;
-        top: 412px;
+        top: 227px;
         z-index: 1;
+        img{
+          width:100px;
+        }
+      }
+
+      .image-side-custom {
+        position: absolute;
+        right: -20px;
+        left: 33px;
+        top: 262px;
+        z-index: 1;
+        img{
+          width:100px;
+        }
       }
 
       .face-info_block {
