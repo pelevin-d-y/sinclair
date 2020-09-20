@@ -13,6 +13,7 @@ body {
   font-family: $font-family;
   color: $text-base-color;
   font-size: 15px;
+  line-height: 25px;
 }
 
 .container {
@@ -80,7 +81,7 @@ form {
   }
 
   .desctop {
-    display: none;
+    display: none !important;
   }
 
   .with-line {
@@ -90,6 +91,7 @@ form {
   .with-line::before {
     width: auto;
     transform: none;
+    height: 14px;
     left: 25px;
     right: 25px;
   }

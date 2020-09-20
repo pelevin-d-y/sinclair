@@ -1,0 +1,171 @@
+extends ../layout/layout.pug
+
+block content
+  main.ellanse
+    include ../includes/header-ellance.pug
+    .container.mobile
+      .el-advantage__logo
+        include ../../images/svg/logo-ellanse.svg
+      h1.header__text-ellanse
+        | Специальная линейка дермальных филлеров- биостимуляторов Ellansé® на основе поликапролактона
+    section.el-advantage
+      .el-advantage__left
+        .container.mobile
+          .el-advantage__images
+            .el-advantage__images-col
+              img(src="../../images/ellanse.png").el-advantage__image
+              .el-advantage__image-caption
+                .el-advantage__image-title
+                  include ../../images/svg/ellanse-s.svg
+                .el-advantage__image-time
+                  include ../../images/svg/1year.svg
+            .el-advantage__images-col
+              img(src="../../images/ellanse.png").el-advantage__image
+              .el-advantage__image-caption
+                .el-advantage__image-title
+                  include ../../images/svg/ellanse-m.svg
+                .el-advantage__image-time
+                  include ../../images/svg/2year.svg
+            .el-advantage__images-col
+              img(src="../../images/ellanse.png").el-advantage__image
+              .el-advantage__image-caption
+                .el-advantage__image-title
+                  include ../../images/svg/ellanse-l.svg
+                .el-advantage__image-time
+                  include ../../images/svg/3year.svg
+                  | *
+        .el-advantage__title.moon-med
+          | Моментальный заполняющий  эффект
+        .el-advantage__plus
+          include ../../images/svg/ellanse-plus.svg
+        .el-advantage__effect.moon-med
+          | Длительный волюмизирующий эффект благодаря стимуляции выработки коллагена
+        .el-advantage__equal
+          include ../../images/svg/equaly.svg
+        .el-advantage__desc1
+          | Филлеры ELLANSÉ® на 70% состоят из геля-носителя на основе карбоксиметилцеллюлозы (КМЦ) и на 30% из микросфер синтетического поликапролактона (ПКЛ).**
+        .el-advantage__desc2
+          | Такой состав обеспечивает мгновенный заполняющий эффект (КМЦ) и последующую стимуляцию выработки собственного коллагена, то есть неоколлагеногенез (ПКЛ).
+        .el-advantage__moon-wrapper.desctop
+          .el-advantage__moon1.moon-med
+            | Более 1 млн. инъекций
+          .el-advantage__moon2.moon-med
+            | Более 10 лет на рынке
+      .el-advantage__right
+        .el-advantage__images.desctop
+          .el-advantage__images-col
+            img(src="../../images/ellanse.png").el-advantage__image
+            .el-advantage__image-caption
+              .el-advantage__image-title
+                include ../../images/svg/ellanse-s.svg
+              .el-advantage__image-time
+                include ../../images/svg/1year.svg
+          .el-advantage__images-col
+            img(src="../../images/ellanse.png").el-advantage__image
+            .el-advantage__image-caption
+              .el-advantage__image-title
+                include ../../images/svg/ellanse-m.svg
+              .el-advantage__image-time
+                include ../../images/svg/2year.svg
+          .el-advantage__images-col
+            img(src="../../images/ellanse.png").el-advantage__image
+            .el-advantage__image-caption
+              .el-advantage__image-title
+                include ../../images/svg/ellanse-l.svg
+              .el-advantage__image-time
+                include ../../images/svg/3year.svg
+                | *
+        .el-advantage__line
+          .el-advantage__tree.mobile
+            include ../../images/svg/ellanse-tree.svg
+        .el-advantage__desc3
+          | Филлеры ELLANSÉ® показаны для субдермальной имплантации с целью длительной коррекции морщин и других несовершенств или нарушений соединительной ткани.
+        .el-advantage__desc4
+          | С помощью филлеров ELLANSÉ® выполняют коррекцию следующих зон: верхняя треть лица (лоб, височная область, зона бровей), средняя треть лица (контурная пластика носа, волюмизация щек, заполнение носогубных складок, и нижняя треть лица (комиссуры губ, морщины «марионетки», а также линия подбородка и овал лица
+        .el-advantage__moon-wrapper.mobile
+          .el-advantage__moon1.moon-med
+            | Более 1 млн. инъекций
+          .el-advantage__moon2.moon-med
+            | Более 10 лет на рынке
+        .el-advantage__logo-wrapper.desctop
+          .el-advantage__logo.desctop
+            include ../../images/svg/logo-ellanse.svg
+          .el-advantage__tree
+            include ../../images/svg/ellanse-tree.svg
+    section.el-lines
+      .el-lines__svg.desctop
+        include ../../images/svg/ellanse-lines.svg
+      .el-lines__svg.mobile
+        include ../../images/svg/ellanse-lines-mobile.svg
+      .el-lines__advantage.el-lines__advantage-1
+        .el-lines__circle 1
+        .el-lines__advantage-text
+          | Длительный эффект, от 1 года до 3 лет
+      .el-lines__advantage.el-lines__advantage-2
+        .el-lines__circle 2
+        .el-lines__advantage-text
+          | Легкость введения
+      .el-lines__advantage.el-lines__advantage-3
+        .el-lines__circle 3
+        .el-lines__advantage-text
+          | Стойкий волюмизирующий эффект
+      .el-lines__advantage.el-lines__advantage-4
+        .el-lines__circle 4
+        .el-lines__advantage-text
+          | Мгновенная коррекция
+      .el-lines__advantage.el-lines__advantage-5
+        .el-lines__circle 5
+        .el-lines__advantage-text
+          | Пластичность
+      .el-lines__text
+        | Преимущества
+    section.el-squares
+      .el-square.el-square1
+        .el-square1__wrapper
+          .el-square1__title
+            | Глубина инъекции
+          .el-square1__text
+            | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
+      .el-square.el-square2
+        .el-square2__wrapper
+          .el-square2__text
+            | Удовлетворенность пациентов после инъекции ELLANSÉ® оценка (средняя) с помощью ВАШ ***
+          .el-square2__bar-wrapper
+            .el-square2__percent
+              | 74%
+            .el-square2__bar
+            .el-square2__caption
+              | ELLANSÉ® 12 месяцев
+          .el-square2__bar-wrapper
+            .el-square2__percent
+              | 81.7%
+            .el-square2__bar.el-square2__bar-2
+            .el-square2__caption
+              | ELLANSÉ® 24 месяца
+      .el-square.el-square3
+        img(src="../../images/desctop/advantages-ellanse.png")
+      .el-square.el-square4
+        .el-square4__wrapper
+          .el-square4__title
+            | Через 24 месяца после инъекции
+          .el-square4__item
+            .el-square4__ellipse
+              include ../../images/svg/ellipse-1.svg
+              span.el-square4__ellipse-percent 75%
+            .el-square4__text
+              | Пациентов хотят повторить процедуру иньъекции ELLANSÉ® - S
+          .el-square4__item
+            .el-square4__ellipse
+              include ../../images/svg/ellipse-2.svg
+              span.el-square4__ellipse-percent 78%
+            .el-square4__text
+              | Пациентов хотят повторить процедуру иньъекции ELLANSÉ® - M
+    section.el-research
+      .container
+        .el-research__wrapper
+          div
+            | * Ожидаемая продолжительность действия в условиях in vivo по результатам экстраполяции данных клинических исследований разложения ПКЛ при применении препаратов ELLANSÉ® - S и ELLANSÉ® - М.
+          div
+            | ** исследование CE mark-Technical dossier (Whitepaper W113.05).
+          div
+            | *** исследование Moers-Carpi MM et al. Polycaprolactone for the Correction of Nasolabial Folds: A 24-Month, Prospective, Randomized, Controlled Clinical Trial. Dermatol Surg 2013;39:457-463.
