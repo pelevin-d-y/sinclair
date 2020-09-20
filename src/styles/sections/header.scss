@@ -30,10 +30,54 @@
   font-weight: normal;
 }
 
+.header-main .header__text {
+  margin-top: 154px;
+}
+
+.header__ellance {
+  min-height: calc(746/1280*100vw)
+}
+
+.header__ellance::before {
+  background: $bg-yellow;
+}
+
+.header__ellance .header__text {
+  margin-top: 97px;
+  max-width: 524px;
+  width: 100%;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+@media (max-width: 1146px) {
+  .header__ellance .header__text {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
 @media (max-width: $tablet) {
+  .header__ellance {
+    margin-bottom: 31px;
+  }
+
   .header {
     padding-top: 27px;
     height: calc(555/375*100vw);
-    // max-height: 800px;
+    max-height: 650px;
+  }
+
+  .header__text-ellanse {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    font-size: 35px;
+    line-height: 40px;
+    font-family: $font-moon-family;
+    font-weight: $thin;
   }
 }
