@@ -394,10 +394,10 @@ section.face.mob {
       margin-top: 0;
       border: none;
       padding: 0;
-      width:350px;
+      width:325px;
 
       img{
-        width:360px;
+        width:325px;
       }
     }
 
@@ -405,7 +405,7 @@ section.face.mob {
       margin-top: 32px;
       border-bottom: 1px solid #35342E;
       padding-bottom: 55px;
-      width:350px;
+      width:325px;
     }
 
     .perfectcha-info__title {
@@ -426,11 +426,12 @@ section.face.mob {
 
   .deep {
     width:375px;
-    margin-top: 45px;
+    //margin-top: 45px;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 73px auto;
+    //margin: 73px auto;
+    margin:45px 0;
 
     .left {
       width:325px;
@@ -473,7 +474,7 @@ section.face.mob {
 
     .deep__description.mob {
       display: block;
-      width: 355px;
+      width: 325px;
       font-family:$font-moon-family;
       font-style: normal;
       font-weight: 300;
@@ -530,6 +531,7 @@ section.face.mob {
         left: 33px;
         top: 227px;
         z-index: 1;
+        width:90%;
         img{
           width:100px;
         }
@@ -539,6 +541,7 @@ section.face.mob {
         position: absolute;
         right: -20px;
         left: 33px;
+        width:90%;
         top: 262px;
         z-index: 1;
         img{
