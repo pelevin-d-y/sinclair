@@ -59,6 +59,10 @@
   width: 1024px;
   margin: 195px auto;
 
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 
   .left {
     width: 446px;
@@ -209,6 +213,8 @@
 }
 
 section.face {
+  margin-bottom: 102px;
+
   .wrapper {
     display: flex;
     align-items: flex-end;
@@ -437,6 +443,10 @@ section.face.mob {
     padding-right: 25px;
     //margin: 73px auto;
     margin:45px 0;
+
+    .wrapper {
+      flex-flow: column nowrap;
+    }
 
     .left {
       width:325px;
