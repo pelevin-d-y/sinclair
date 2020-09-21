@@ -86,24 +86,31 @@
     left: 0;
     top: 0;
     z-index: -1;
+    img {
+      width: 100%;
+    }
   }
 
   .deep-circle1 {
-    left: calc(729 / 1280 * 100%);
+    max-width: 105px;
+    width: 100%;
+    left: 58%;
     top: 176px;
   }
 
   .deep-circle2 {
+    max-width: 207px;
+    width: 100%;
     left: calc(589 / 1280 * 100vw);
     top: 250px;
     left: -210px;
   }
 
   .deep-circle3 {
-    max-width: 287px;
+    max-width: 298px;
     width: 100%;
-    top: 200px;
-    left: 71%;
+    top: 195px;
+    left: 72%;
 
     img {
       width: 100%;
@@ -111,21 +118,28 @@
   }
 
   .deep-circle4 {
-    top: 260px;
-    left: 80px;
+    max-width: 25px;
+    width: 100%;
+    top: 269px;
+    left: 0px;
   }
 
   .deep-circle5 {
-    left: 92%;
+    max-width: 56px;
+    width: 100%;
+    left: 94%;
     top: 50px;
   }
 
   .deep-circle6 {
+    max-width: 25px;
+    width: 100%;
     top: 310px;
     left: 52%;
   }
 
-  .deep-circle7 {}
+  .deep-circle7 {
+  }
 
   .wrapper {
     display: flex;
@@ -525,7 +539,6 @@ section.face.mob {
       margin-top: 32px;
       border-bottom: 1px solid #35342e;
       padding-bottom: 55px;
-
     }
 
     .perfectcha-info__title {
@@ -563,8 +576,6 @@ section.face.mob {
     }
 
     .left {
-
-
       .deep__title {
         font-weight: 300;
         font-size: 60px;
@@ -651,8 +662,6 @@ section.face.mob {
   .deep-circle6 {
     display: none;
   }
-
-
 
   .face {
     display: none;
