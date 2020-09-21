@@ -31,13 +31,16 @@
 }
 
 .navigation__socials {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   margin-left: 36px;
 }
 
 .social__navigation {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-right: 10.5px;
 
   &:last-child{
@@ -65,7 +68,7 @@
     width: 100vw;
     height: 100vh;
     padding-top: 25px;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
     transform: translateX(-100%);
 
     background: #ffffff;
@@ -119,6 +122,8 @@
     margin-top: auto;
     margin-left: 20px;
     align-self: flex-start;
+
+    margin-left: 40px;
   }
 
   .social__navigation {

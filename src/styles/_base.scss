@@ -5,11 +5,12 @@
 
 * {
   box-sizing: border-box;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
 }
 
 body {
   padding-bottom: 100px;
-
   font-family: $font-family;
   color: $text-base-color;
   font-size: 15px;
@@ -35,6 +36,7 @@ ul {
 a {
   color: $text-blue-color;
   text-decoration: none;
+  font-variant-numeric: lining-nums;
 }
 
 .mobile {

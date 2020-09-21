@@ -2,12 +2,16 @@
   position: relative;
   z-index: 1;
   margin-top: -180px;
+  overflow: hidden;
 
   .wrapper {
     display: flex;
     flex-flow: row wrap;
-    padding-left: 99px;
     margin-top: 200px;
+    justify-content: space-between;
+    max-width: 1083px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .left {
@@ -28,11 +32,21 @@
   }
 
   .right {
-    width: 620px;
-    border-bottom: 1px solid #000000;
+    position: relative;
+    max-width: 533px;
+    width: 100%;
     padding-bottom: 57px;
-    margin-left: 190px;
-    margin-top: -255px;
+    margin-top: -191px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 4px;
+      width: 100vw;
+      height: 1px;
+      background: #000000;
+    }
 
     img {
       display: block;
@@ -58,9 +72,47 @@
 }
 
 .deep {
+  position: relative;
   display: flex;
   width: 1024px;
   margin: 195px auto;
+
+  .deep-circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .deep-circle1 {
+    left: calc(729/1280*100%);
+    top: 176px;
+  }
+
+  .deep-circle2 {
+    left: calc(589/1280*100vw);
+    top: 176px;
+  }
+
+  .deep-circle3 {
+    
+  }
+
+  .deep-circle4 {
+    
+  }
+
+  .deep-circle5 {
+    
+  }
+
+  .deep-circle6 {
+    
+  }
+
+  .deep-circle7 {
+    
+  }
 
   .wrapper {
     display: flex;
@@ -432,6 +484,10 @@ section.face.mob {
       padding: 0;
       max-width: 325px;
 
+      &::before {
+        display: none;
+      }
+
       img {
         width: 100%;
       }
@@ -466,7 +522,8 @@ section.face.mob {
   }
 
   .deep {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     //margin-top: 45px;
     flex-direction: column;
     padding-left: 25px;
@@ -520,7 +577,9 @@ section.face.mob {
 
     .deep__description.mob {
       display: block;
-      width: 325px;
+      max-width: 325px;
+      width: 100%;
+
       font-family: $font-moon-family;
       font-style: normal;
       font-weight: 300;
@@ -582,7 +641,7 @@ section.face.mob {
         left: 44px;
         top: 23%;
         z-index: 1;
-        width: 90%;
+        width: 80%;
         img {
           width: 100px;
         }
@@ -593,7 +652,7 @@ section.face.mob {
         position: absolute;
         right: -20px;
         left: 44px;
-        width: 90%;
+        width: 80%;
         top: 220px;
         z-index: 1;
         img {
