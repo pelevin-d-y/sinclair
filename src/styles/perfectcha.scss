@@ -430,10 +430,10 @@ section.face.mob {
       margin-top: 0;
       border: none;
       padding: 0;
-      width: 325px;
+      max-width: 325px;
 
       img {
-        width: 325px;
+        width: 100%;
       }
       ul {
         li {
@@ -649,5 +649,8 @@ section.face.mob {
 
   section.face.mob .wrapper .image-side-custom {
     top: 26%;
+  }
+  section.face.mob .wrapper .face-center {
+    margin-top: -44px;
   }
 }
