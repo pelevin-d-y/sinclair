@@ -1,17 +1,26 @@
 import jquery from 'jquery'
 window.$ = window.jQuery = jquery;
 import 'jquery-validation'
+import 'jquery.maskedinput'
+
+
+
+
+
 
 $(() => {
+
+
+
   const menu = document.querySelector('.navigation__wrapper');
   const triggers = Array.from(document.querySelectorAll('.menu-trigger'));
-  
+
   triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       menu.classList.toggle('menu-show')
     })
   })
-  
+
   if ($("#main-form")[0]) {
 
     const createHtmlForEmail = (data) => {
@@ -31,13 +40,13 @@ $(() => {
       </div>`
     }
 
-    $.validator.methods.phone = function( value, element ) {
-      return this.optional( element ) || /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test( value );
+    $.validator.methods.phone = function (value, element) {
+      return this.optional(element) || /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(value);
     }
     $("#main-form").validate({
       onkeyup: false, // по каким событиям происходит валидация
       onclick: false,
-      rules:{
+      rules: {
         form__name: {
           required: true
         },
@@ -62,7 +71,7 @@ $(() => {
           email: 'Некорректрый email'
         }
       },
-      showErrors: function(errorMap, errorList) { // для показа ошибок последовательно
+      showErrors: function (errorMap, errorList) { // для показа ошибок последовательно
         if (errorList.length) {
           var s = errorList.shift();
           var n = [];
@@ -73,7 +82,7 @@ $(() => {
         this.defaultShowErrors();
       },
       errorPlacement: function ($error, $element) { // место куда вставлять ошибки
-          $('.form__errors').append($error)
+        $('.form__errors').append($error)
       },
       submitHandler: (form) => { // что сделать когда форма провалидирована
         const letterData = () => {
@@ -91,22 +100,27 @@ $(() => {
             html: createHtmlForEmail(data)
           }
         }
-        
+
         fetch('https://api.42.works/mailer', {
-          method: 'POST',
-          body: JSON.stringify(letterData()),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
-        .then((response) => {
-          console.log('success')
-          $('.form__footer').addClass('success')
-        })
-        .catch((err) => {
-          console.log('error')
-        })
+            method: 'POST',
+            body: JSON.stringify(letterData()),
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          .then((response) => {
+            console.log('success')
+            $('.form__footer').addClass('success')
+          })
+          .catch((err) => {
+            console.log('error')
+          })
       }
     })
+
+    console.log('#phone');
   }
+
+  $("#phone").mask("+7 (999) 999-99-99");
+
 })
