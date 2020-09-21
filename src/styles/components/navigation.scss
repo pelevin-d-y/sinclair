@@ -90,7 +90,6 @@
     padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
   }
 
   .navigation__cross svg {
@@ -109,6 +108,10 @@
   .navigation__item {
     margin-right: 0;
     margin-bottom: 30px;
+
+    &:first-child {
+      margin-top: auto;
+    }
   }
 
   .navigation__link {

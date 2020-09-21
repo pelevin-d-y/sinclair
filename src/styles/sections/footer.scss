@@ -42,10 +42,17 @@
 }
 
 .footer__section-item-socials {
+  display: flex;
+  flex-flow: row nowrap;
   margin-top: 13px;
 }
 
-.footer__section-item-socials .social__inst {
+.footer .social {
+  margin-right: 11px;
+}
+
+.footer__section-item-socials .social__inst,
+.footer__section-item-socials .social__fb {
   display: block;
   width: 23px;
   height: 23px;
@@ -85,6 +92,11 @@
   line-height: 20px;
 }
 
+.copyright a {
+  display: block;
+  color: #35342E;
+}
+
 @media (max-width: $tablet) {
   .footer__logo {
     display: none;
@@ -109,5 +121,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .footer__section-item-socials .social__inst,
+  .footer__section-item-socials .social__fb {
+    display: block;
+    width: 27px;
+    height: 27px;
   }
 }

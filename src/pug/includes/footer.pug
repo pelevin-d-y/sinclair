@@ -2,7 +2,7 @@
   .container.footer__container
     .footer__logo
       include ../../images/svg/logo.svg
-    .footer__top
+    .footer__top#contacts
       .footer__section
         .footer__section-title
           | sinclair pharma russia
@@ -17,6 +17,8 @@
         .footer__section-item.footer__section-item-socials
           a(href="https://www.instagram.com/sinclairpharmarussia/").social.social__inst
             include ../../images/svg/insta.svg
+          a(href="https://www.facebook.com/SinclairPharmaRussia/").social.social__fb
+            include ../../images/svg/fb.svg
       .footer__section
         .footer__section-title
           | Официальный дистрибьютор
@@ -34,7 +36,7 @@
       .footer__nav
         ul.footer__nav-list
           li.footer__nav-item 
-            a(href="#") О бренде
+            a(href="/") О бренде
           li.footer__nav-item 
             a(href="./perfectcha.pug") Perfectha
             sup ®
@@ -42,11 +44,11 @@
             a(href="./ellance.pug") Ellansé
             sup ®
           li.footer__nav-item
-            a(href="#") Для партнеров
+            a(href="./index.pug#partners") Для партнеров
       .copyright
-        div
+        a(href="../policy.pdf")
           | Политика конфиденциальности 
-        div
+        a(href="../policy.pdf")
           | Политика обработки персональных данных
         div 
           | Sinclair Pharma © Copyright All Rights Reserved. 
