@@ -6,3 +6,7 @@
     font-style: $style;
   }
 }
+
+@mixin calcRes($property, $value) {
+  #{$property}: calc($value/1280*100vw)
+}

@@ -108,6 +108,7 @@
 }
 
 .main-perfectha__btn {
+  display: inline-block;
   padding: 16px 26px;
   margin-top: 29px;
 
@@ -158,6 +159,7 @@
 }
 
 .main-ellanse__btn {
+  display: inline-block;
   padding: 16px 26px;
   margin-top: 29px;
 
@@ -193,6 +195,8 @@
 }
 
 .partners__description {
+  max-width: 891px;
+
   font-size: 15px;
   line-height: 25px;
 }

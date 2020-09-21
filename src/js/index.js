@@ -11,32 +11,25 @@ $(() => {
       menu.classList.toggle('menu-show')
     })
   })
-
-  // const form = document.querySelector('.main-form')
-  // if (form) {
-  //   const errors = {
-  //     form__name: {
-  //       require: 'укажите ваше имя',
-
-  //     },
-  //     form__phone: {
-
-  //     },
-  //     form__email : {
-
-  //     },
-  //   }
-
-  //   form.addEventListener('submit', (evt) => {
-  //     evt.preventDefault()
-  //     const inputs = Array.from(evt.target.querySelectorAll('input'))
-  //     inputs.forEach(input => {
-  //       const name = input.getAttribute('name')
-  //     })
-  //   })
-  // }
   
   if ($("#main-form")[0]) {
+
+    const createHtmlForEmail = (data) => {
+      return `<div>
+        <div>
+          name: <b>${data.form__name}</b>
+        </div>
+        <div>
+          phone: <b>${data.form__phone}</b>
+        </div>
+        <div>
+          email: <b>${data.form__email}</b>
+        </div>
+        <div>
+          company: <b>${data.form__company}</b>
+        </div>
+      </div>`
+    }
 
     $.validator.methods.phone = function( value, element ) {
       return this.optional( element ) || /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test( value );
@@ -83,8 +76,36 @@ $(() => {
           $('.form__errors').append($error)
       },
       submitHandler: (form) => { // что сделать когда форма провалидирована
-        console.log('submit')
-        $('.form__footer').addClass('success')
+        const letterData = () => {
+          let data = {}
+          const inputs = Array.from(form.querySelectorAll('.form__input input'))
+          inputs.map(input => {
+            let key = input.getAttribute('name')
+            data[key] = input.value
+          })
+
+          return {
+            to: 'info@Sinclair-Pharma.ru',
+            subject: 'Cinclair form',
+            text: 'Cinclair',
+            html: createHtmlForEmail(data)
+          }
+        }
+        
+        fetch('https://api.42.works/mailer', {
+          method: 'POST',
+          body: JSON.stringify(letterData()),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then((response) => {
+          console.log('success')
+          $('.form__footer').addClass('success')
+        })
+        .catch((err) => {
+          console.log('error')
+        })
       }
     })
   }
