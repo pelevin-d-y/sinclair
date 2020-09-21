@@ -522,7 +522,8 @@ section.face.mob {
   }
 
   .deep {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     //margin-top: 45px;
     flex-direction: column;
     padding-left: 25px;
@@ -576,7 +577,9 @@ section.face.mob {
 
     .deep__description.mob {
       display: block;
-      width: 325px;
+      max-width: 325px;
+      width: 100%;
+
       font-family: $font-moon-family;
       font-style: normal;
       font-weight: 300;
@@ -638,7 +641,7 @@ section.face.mob {
         left: 44px;
         top: 23%;
         z-index: 1;
-        width: 90%;
+        width: 80%;
         img {
           width: 100px;
         }
@@ -649,7 +652,7 @@ section.face.mob {
         position: absolute;
         right: -20px;
         left: 44px;
-        width: 90%;
+        width: 80%;
         top: 220px;
         z-index: 1;
         img {
