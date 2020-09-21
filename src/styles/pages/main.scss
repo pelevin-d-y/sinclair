@@ -2,6 +2,10 @@
   padding-top: 91px;
 }
 
+#phone:focus::placeholder {
+  color: transparent
+}
+
 .main-description__row {
   display: flex;
   flex-flow: row nowrap;

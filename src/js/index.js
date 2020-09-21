@@ -1,20 +1,12 @@
 import jquery from 'jquery'
 window.$ = window.jQuery = jquery;
 import 'jquery-validation'
-import 'jquery.maskedinput'
-
-
-
-
-
+import 'jquery-mask-plugin'
 
 $(() => {
-
-
-
   const menu = document.querySelector('.navigation__wrapper');
   const triggers = Array.from(document.querySelectorAll('.menu-trigger'));
-
+  $('#phone').mask('+7 (000) 000-00-00');
   triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       menu.classList.toggle('menu-show')
@@ -75,10 +67,10 @@ $(() => {
         if (errorList.length) {
           var s = errorList.shift();
           var n = [];
-          console.log('n', n)
           n.push(s);
           this.errorList = n;
         }
+        
         this.defaultShowErrors();
       },
       errorPlacement: function ($error, $element) { // место куда вставлять ошибки
@@ -100,7 +92,6 @@ $(() => {
             html: createHtmlForEmail(data)
           }
         }
-
         fetch('https://api.42.works/mailer', {
             method: 'POST',
             body: JSON.stringify(letterData()),
@@ -117,10 +108,5 @@ $(() => {
           })
       }
     })
-
-    console.log('#phone');
   }
-
-  $("#phone").mask("+7 (999) 999-99-99");
-
 })
